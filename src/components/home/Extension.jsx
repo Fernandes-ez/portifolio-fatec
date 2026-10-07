@@ -20,17 +20,39 @@ export default function Extension() {
 
         {extensionCourses.length > 0 ? (
           <ul className="mt-12 grid gap-6 md:grid-cols-2">
-            {extensionCourses.map((c) => (
-              <li key={c.name} className="rounded-[2px] border border-[color:var(--line)] bg-white/60 p-7">
-                <h3 className="font-display text-[1.15rem] tracking-[-0.03em]">{c.name}</h3>
-                <dl className="mt-5 grid grid-cols-2 gap-4 text-[0.92rem]">
-                  <div><dt className="font-mono text-[0.72rem] text-violet">Local</dt><dd>{c.place}</dd></div>
-                  <div><dt className="font-mono text-[0.72rem] text-violet">Instituição</dt><dd>{c.institution}</dd></div>
-                  <div><dt className="font-mono text-[0.72rem] text-violet">Carga horária</dt><dd>{c.hours}</dd></div>
-                  <div><dt className="font-mono text-[0.72rem] text-violet">Período</dt><dd>{c.period}</dd></div>
-                </dl>
-              </li>
-            ))}
+            {extensionCourses.map((c) => {
+              const meta = [
+                ["Local", c.place],
+                ["Instituição", c.institution],
+                ["Carga horária", c.hours],
+                ["Período", c.period],
+              ].filter(([, v]) => v);
+              return (
+                <li key={c.name} className="flex flex-col rounded-[2px] border border-[color:var(--line)] bg-white/60 p-7">
+                  <h3 className="font-display text-[1.2rem] tracking-[-0.03em]">{c.name}</h3>
+                  {meta.length > 0 && (
+                    <dl className="mt-4 flex flex-wrap gap-x-8 gap-y-3 text-[0.92rem]">
+                      {meta.map(([k, v]) => (
+                        <div key={k}>
+                          <dt className="font-mono text-[0.72rem] text-violet">{k}</dt>
+                          <dd>{v}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  )}
+                  {c.description && <p className="muted mt-5">{c.description}</p>}
+                  {c.topics?.length > 0 && (
+                    <ul className="mt-5 flex flex-wrap gap-2">
+                      {c.topics.map((t) => (
+                        <li key={t} className="tag">
+                          {t}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         ) : (
           <div className="mt-12 rounded-[2px] border border-dashed border-violet/50 bg-white/50 p-8">

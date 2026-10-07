@@ -87,17 +87,35 @@ export const experience = experiences.find((e) => e.current);
 
 /**
  * Cursos de extensão / formação complementar.
- * O currículo não lista cursos de extensão com carga horária; preencha abaixo
- * (name, place, institution, hours, period) e eles aparecem automaticamente no site.
+ * Campos opcionais: place, institution, hours, period, description, topics.
+ * Só o que estiver preenchido aparece no card.
  */
 export const extensionCourses = [
-  // {
-  //   name: "Nome do curso",
-  //   place: "Cidade / Online",
-  //   institution: "Instituição",
-  //   hours: "40h",
-  //   period: "01/2025 – 03/2025",
-  // },
+  {
+    name: "Formação React",
+    place: "Online",
+    institution: "Rocketseat",
+    description: "Formação focada em desenvolvimento front-end com React.",
+    topics: ["React", "Front-end"],
+  },
+  {
+    name: "Cursos de programação",
+    place: "Online",
+    institution: "Alura",
+    description:
+      "Mais de 20 cursos concluídos na Alura, cobrindo os fundamentos de programação e as principais tecnologias de back-end e front-end.",
+    topics: [
+      "Lógica de programação",
+      "JavaScript",
+      "Java",
+      "C# e .NET",
+      "Node.js",
+      "HTML e CSS",
+      "MongoDB",
+      "Git e GitHub",
+      "Segurança da informação",
+    ],
+  },
 ];
 
 export const languages = [
