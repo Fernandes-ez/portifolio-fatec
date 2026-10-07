@@ -33,34 +33,57 @@ export const education = {
   forecast: "Em andamento (conclusão prevista conforme grade do curso)",
 };
 
-export const experience = {
-  company: "Talk2buy",
-  period: "03/2024 – Presente",
-  roles: [
-    {
-      title: "Estagiário de Desenvolvimento de Software",
-      period: "07/2024 – Presente",
-      current: true,
-      description:
-        "Desenvolvimento de APIs RESTful e integração com front-end em React/Next.js. Implementação de microsserviços, autenticação e autorização. Otimização de consultas e manipulação de bancos de dados MySQL e MongoDB.",
-      bullets: [
-        "Implementação de funcionalidades em C# e .NET.",
-        "Criação e ajuste de interfaces responsivas com Next.js.",
-        "Integração entre front-end e back-end em aplicações de produção.",
-      ],
-      stack: ["C#", ".NET", "Node.js", "React", "Next.js", "MySQL", "MongoDB"],
-    },
-    {
-      title: "Estagiário de QA",
-      period: "03/2024 – 06/2024",
-      current: false,
-      description:
-        "Criação de documentação técnica clara e acessível, testes funcionais e validação de interfaces com aderência ao design.",
-      bullets: [],
-      stack: ["Testes funcionais", "Documentação"],
-    },
-  ],
-};
+/** Experiências, da mais recente para a mais antiga. */
+export const experiences = [
+  {
+    company: "Aqua Fit Club",
+    period: "03/2026 – Presente",
+    current: true,
+    roles: [
+      {
+        title: "Suporte de TI",
+        period: "03/2026 – Presente",
+        current: true,
+        description:
+          "Suporte de TI: atendimento a usuários e manutenção do ambiente de tecnologia da empresa.",
+        bullets: [],
+        stack: ["Suporte de TI"],
+      },
+    ],
+  },
+  {
+    company: "Talk2buy",
+    period: "03/2024 – 03/2026",
+    current: false,
+    roles: [
+      {
+        title: "Estagiário de Desenvolvimento de Software",
+        period: "07/2024 – 03/2026",
+        current: false,
+        description:
+          "Desenvolvimento de APIs RESTful e integração com front-end em React/Next.js. Implementação de microsserviços, autenticação e autorização. Otimização de consultas e manipulação de bancos de dados MySQL e MongoDB.",
+        bullets: [
+          "Implementação de funcionalidades em C# e .NET.",
+          "Criação e ajuste de interfaces responsivas com Next.js.",
+          "Integração entre front-end e back-end em aplicações de produção.",
+        ],
+        stack: ["C#", ".NET", "Node.js", "React", "Next.js", "MySQL", "MongoDB"],
+      },
+      {
+        title: "Estagiário de QA",
+        period: "03/2024 – 06/2024",
+        current: false,
+        description:
+          "Criação de documentação técnica clara e acessível, testes funcionais e validação de interfaces com aderência ao design.",
+        bullets: [],
+        stack: ["Testes funcionais", "Documentação"],
+      },
+    ],
+  },
+];
+
+/** Experiência atual (usada no hero). */
+export const experience = experiences.find((e) => e.current);
 
 /**
  * Cursos de extensão / formação complementar.

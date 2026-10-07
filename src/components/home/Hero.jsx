@@ -11,7 +11,7 @@ export default function Hero() {
   const stats = [
     { label: "Projetos", value: String(projects.length), text: "um por semestre, de 2024 a 2026" },
     { label: "Commits", value: `${totalCommits}+`, text: "contribuições identificadas nos repositórios" },
-    { label: "Estágio", value: "Talk2buy", text: "desenvolvimento de software desde 07/2024" },
+    { label: "Experiência", value: "2 empresas", text: "estágio em desenvolvimento na Talk2buy e suporte de TI no Aqua Fit Club" },
   ];
 
   return (

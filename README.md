@@ -29,7 +29,7 @@ No GitHub Pages o site fica em `https://<usuário>.github.io/<repositório>/`; o
 
 ## Sobre as capturas de tela
 
-Geradas rodando os projetos localmente (arquivos em `public/screenshots`):
+Geradas rodando os projetos localmente (arquivos em `src/assets/screenshots`):
 
 - **1º semestre**: site estático real.
 - **2º semestre (2Buku)**: servidor Node.js real com MySQL/MariaDB e o banco do repositório. Capas do catálogo são de demonstração (a API do Google Books não estava acessível).
