@@ -34,6 +34,5 @@ Geradas rodando os projetos localmente (arquivos em `src/assets/screenshots`):
 - **1º semestre**: site estático real.
 - **2º semestre (2Buku)**: servidor Node.js real com MySQL/MariaDB e o banco do repositório. Capas do catálogo são de demonstração (a API do Google Books não estava acessível).
 - **3º/5º (Center Pet)** e **4º (Swaply web)**: apps reais (Expo/React Native Web e Vite) com uma **API simulada**, pois o MongoDB não estava acessível. Pets, ONGs e cursos exibidos são dados de demonstração.
-- **APIs** (Center Pet e Swaply): painel montado a partir das rotas reais do código.
 
 Textos de "participação" baseados no histórico de commits dos repositórios; revise-os e ajuste conforme sua memória do que fez.

@@ -5,7 +5,6 @@ import Edge from "../components/ui/Edge";
 import Brace from "../components/ui/Brace";
 import { GithubIcon } from "../components/ui/Icons";
 import Gallery from "../components/project/Gallery";
-import ApiPanel from "../components/project/ApiPanel";
 import { projects, getProject, semesterLabel } from "../data/projects";
 import { profile } from "../data/profile";
 
@@ -90,13 +89,8 @@ export default function ProjectDetail() {
           <p className="kicker">Projeto em funcionamento</p>
           <h2 className="title">Capturas de tela</h2>
 
-          {project.api && (
-            <div className="mt-12">
-              <ApiPanel api={project.api} />
-            </div>
-          )}
 
-          <div className={project.api ? "mt-16" : "mt-12"}>
+          <div className="mt-12">
             <Gallery shots={project.screenshots} title={project.title} />
           </div>
 

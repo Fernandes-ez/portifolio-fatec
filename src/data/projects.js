@@ -111,22 +111,8 @@ export const projects = [
       { src: shot("s3-catalogo"), device: "phone", caption: "App: catálogo com busca e filtros" },
       { src: shot("s3-login"), device: "phone", caption: "App: login e fluxos de cadastro" },
     ],
-    api: {
-      name: "center-pet-api",
-      base: "/api",
-      stack: "Express 4 · Mongoose 8 · JWT · bcrypt · Nodemailer · Firebase Admin · New Relic",
-      groups: [
-        { name: "auth", routes: [["POST", "/auth/login"], ["POST", "/auth/logout"], ["POST", "/auth/forgot-password"], ["POST", "/auth/reset-password"]] },
-        { name: "adopters", routes: [["POST", "/adopters/register"], ["GET", "/adopters"], ["GET", "/adopters/:adopterId"], ["PATCH", "/adopters/editProfile/:id"], ["PATCH", "/adopters/updateSafeAdopter"], ["DELETE", "/adopters/delete/:adopterId"]] },
-        { name: "ongs", routes: [["POST", "/ongs/register"], ["GET", "/ongs"], ["GET", "/ongs/:id"], ["PATCH", "/ongs/editProfile/:id"], ["DELETE", "/ongs/delete/:id"]] },
-        { name: "pets", routes: [["POST", "/pets/register"], ["GET", "/pets"], ["GET", "/pets/by-ong/:ongId"], ["GET", "/pets/:petId"], ["PATCH", "/pets/update/:petId"], ["DELETE", "/pets/delete/:petId"]] },
-        { name: "adoptions", routes: [["POST", "/adoptions/create"], ["GET", "/adoptions"], ["GET", "/adoptions/by-ong/:ongId"], ["POST", "/adoptions/accept/:id"], ["POST", "/adoptions/reject/:id"], ["PATCH", "/adoptions/update/:id"], ["DELETE", "/adoptions/:id"]] },
-        { name: "emails", routes: [["POST", "/emails/welcome/adopter"], ["POST", "/emails/welcome/ong"], ["POST", "/emails/delete/adopter"], ["POST", "/emails/delete/ong"]] },
-      ],
-      models: ["adopter", "ong", "pet", "adoption", "passwordResetToken"],
-    },
     captureNote:
-      "Capturas reais do app (Expo/React Native Web) rodando localmente. Pets e ONGs exibidos são dados de demonstração servidos por uma API simulada, pois o banco MongoDB não estava acessível no ambiente de captura. O painel da API é montado a partir das rotas reais do código.",
+      "Capturas reais do app (Expo/React Native Web) rodando localmente. Pets e ONGs exibidos são dados de demonstração servidos por uma API simulada, pois o banco MongoDB não estava acessível no ambiente de captura.",
     participation: {
       summary:
         "Desenvolvi a API REST do Center Pet do zero, da conexão com o banco ao fluxo de adoção e e-mails, versionando as entregas de forma incremental (0.0.1 → 0.7.4).",
@@ -168,22 +154,8 @@ export const projects = [
       { src: shot("s4-dashboard"), device: "desktop", caption: "Web: catálogo de cursos e estatísticas" },
       { src: shot("s4-login"), device: "desktop", caption: "Web: login" },
     ],
-    api: {
-      name: "swaply-api",
-      base: "/api",
-      stack: "Express 4 · Mongoose 7 · JWT · Passport (Google) · Helmet · Joi · node-cron · Stripe · Jitsi",
-      groups: [
-        { name: "auth", routes: [["POST", "/auth/register"], ["POST", "/auth/login"], ["POST", "/auth/refresh-token"], ["GET", "/auth/verify-token"], ["POST", "/auth/forgot-password"], ["POST", "/auth/reset-password"], ["GET", "/auth/google"], ["POST", "/auth/logout"]] },
-        { name: "courses", routes: [["GET", "/courses"], ["GET", "/courses/popular"], ["GET", "/courses/featured"], ["GET", "/courses/categories"]] },
-        { name: "users", routes: [["GET", "/users/profile"], ["POST", "/users/avatar"], ["GET", "/users/credits/balance"], ["GET", "/users/favorites"], ["GET", "/users/enrolled-courses"], ["GET", "/users/teaching-courses"], ["GET", "/users/calendar"], ["GET", "/users/reviews/stats"], ["POST", "/users/become-instructor"]] },
-        { name: "notifications", routes: [["GET", "/notifications"], ["GET", "/notifications/unread-count"], ["PUT", "/notifications/:id/read"], ["PUT", "/notifications/mark-all-read"], ["DELETE", "/notifications/clear-all"]] },
-        { name: "classes · instructors", routes: [["GET", "/classes/history"], ["GET", "/instructors/:id/calendar"]] },
-        { name: "stats", routes: [["GET", "/stats"], ["GET", "/stats/courses"], ["GET", "/stats/users"]] },
-      ],
-      models: ["User", "Course", "Class", "ScheduledClass", "Enrollment", "InstructorAvailability", "Review", "Payment", "Notification", "PlatformFeedback"],
-    },
     captureNote:
-      "Capturas reais da interface web (Vite) rodando localmente. Os cursos e números exibidos são dados de demonstração servidos por uma API simulada, pois o banco MongoDB não estava acessível no ambiente de captura. O painel da API é montado a partir das rotas reais do código.",
+      "Capturas reais da interface web (Vite) rodando localmente. Os cursos e números exibidos são dados de demonstração servidos por uma API simulada, pois o banco MongoDB não estava acessível no ambiente de captura.",
     participation: {
       summary:
         "Atuei nas duas pontas do Swaply: no back-end (autenticação, notificações, agendamento, favoritos, feedback e e-mails) e no front-end React (páginas, tema escuro, acessibilidade e roteamento por URL).",
