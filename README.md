@@ -14,7 +14,9 @@ npm run build    # gera dist/
 npm run preview
 ```
 
-Deploy estático: Vercel (`vercel.json`) e Netlify (`public/_redirects`) já têm o fallback de SPA.
+Deploy estático: **GitHub Pages** (workflow em `.github/workflows/deploy.yml`, publica a cada push na `main`), Vercel (`vercel.json`) e Netlify (`public/_redirects`) já têm o fallback de SPA.
+
+No GitHub Pages o site fica em `https://<usuário>.github.io/<repositório>/`; o caminho base vem da variável `VITE_BASE`, definida no workflow. Para testar localmente o build de Pages: `VITE_BASE=/portifolio-fatec/ npm run build`.
 
 ## Onde editar
 

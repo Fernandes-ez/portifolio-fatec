@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset";
+
 /**
  * Dados do aluno (currículo oficial). Edite aqui para atualizar o site.
  * Foto: coloque o arquivo em /public/images/enzo.jpg (se não existir, aparece o monograma).
@@ -11,12 +13,12 @@ export const profile = {
   phone: "+55 11 94035-4855",
   phoneLink: "https://wa.me/5511940354855",
   email: "fernandesdenzo223@gmail.com",
-  photo: "/images/enzo.jpg",
+  photo: asset("/images/enzo.jpg"),
   github: "https://github.com/fernandes-ez",
   linkedin: "https://www.linkedin.com/in/fernandes-ez/",
   cv: [
-    { label: "Currículo (PT)", href: "/docs/Enzo-Fernandes-Curriculo-PT.pdf" },
-    { label: "Resume (EN)", href: "/docs/Enzo-Fernandes-Curriculo-EN.pdf" },
+    { label: "Currículo (PT)", href: asset("/docs/Enzo-Fernandes-Curriculo-PT.pdf") },
+    { label: "Resume (EN)", href: asset("/docs/Enzo-Fernandes-Curriculo-EN.pdf") },
   ],
   summary:
     "Desenvolvedor com experiência prática em Node.js, .NET, React e bancos SQL/NoSQL. Construo APIs RESTful, CRUDs completos e integrações entre front-end e back-end, com foco em aplicações responsivas, escaláveis e orientadas à performance.",

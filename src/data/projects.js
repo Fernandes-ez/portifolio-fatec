@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset";
+
 /**
  * Projetos por semestre. Os textos de "participação" foram escritos a partir do
  * histórico de commits dos repositórios (autoria do Enzo sob os aliases
@@ -21,9 +23,9 @@ export const projects = [
     stack: ["HTML5", "CSS3", "JavaScript", "Git/GitHub"],
     repos: [{ label: "ProjetoIntegrador-DW", url: "https://github.com/ArtuTuin/ProjetoIntegrador-DW" }],
     screenshots: [
-      { src: "/screenshots/s1-home.webp", device: "desktop", caption: "Home: escolha entre conta de água e de luz" },
-      { src: "/screenshots/s1-agua.webp", device: "desktop", caption: "Conta de água: recomendações por faixa de consumo" },
-      { src: "/screenshots/s1-luz.webp", device: "desktop", caption: "Conta de luz: dicas de economia por faixa" },
+      { src: asset("/screenshots/s1-home.webp"), device: "desktop", caption: "Home: escolha entre conta de água e de luz" },
+      { src: asset("/screenshots/s1-agua.webp"), device: "desktop", caption: "Conta de água: recomendações por faixa de consumo" },
+      { src: asset("/screenshots/s1-luz.webp"), device: "desktop", caption: "Conta de luz: dicas de economia por faixa" },
     ],
     captureNote: "Capturas reais: o site estático foi servido localmente e fotografado em um navegador.",
     participation: {
@@ -59,9 +61,9 @@ export const projects = [
     stack: ["Node.js", "Express", "MySQL", "Handlebars/EJS", "Bootstrap", "Nodemailer", "Cloudinary", "Google Books API"],
     repos: [{ label: "2Buku.com", url: "https://github.com/Celegattodev/2Buku.com" }],
     screenshots: [
-      { src: "/screenshots/s2-login.webp", device: "desktop", caption: "Entrada: login e cadastro" },
-      { src: "/screenshots/s2-catalogo.webp", device: "desktop", caption: "Catálogo: mais populares e novidades" },
-      { src: "/screenshots/s2-perfil.webp", device: "desktop", caption: "Perfil do usuário com “Meus Livros”" },
+      { src: asset("/screenshots/s2-login.webp"), device: "desktop", caption: "Entrada: login e cadastro" },
+      { src: asset("/screenshots/s2-catalogo.webp"), device: "desktop", caption: "Catálogo: mais populares e novidades" },
+      { src: asset("/screenshots/s2-perfil.webp"), device: "desktop", caption: "Perfil do usuário com “Meus Livros”" },
     ],
     captureNote:
       "Capturas reais: o servidor Node.js rodou localmente com MySQL/MariaDB e o banco do repositório. Capas e dados do catálogo são de demonstração, pois a API do Google Books não é acessível no ambiente de captura.",
@@ -102,9 +104,9 @@ export const projects = [
       { label: "center-pet-mobile", url: "https://github.com/Center-Pet/center-pet-mobile" },
     ],
     screenshots: [
-      { src: "/screenshots/s3-home.webp", device: "phone", caption: "App: home com destaque de pets e ONGs" },
-      { src: "/screenshots/s3-catalogo.webp", device: "phone", caption: "App: catálogo com busca e filtros" },
-      { src: "/screenshots/s3-login.webp", device: "phone", caption: "App: login e fluxos de cadastro" },
+      { src: asset("/screenshots/s3-home.webp"), device: "phone", caption: "App: home com destaque de pets e ONGs" },
+      { src: asset("/screenshots/s3-catalogo.webp"), device: "phone", caption: "App: catálogo com busca e filtros" },
+      { src: asset("/screenshots/s3-login.webp"), device: "phone", caption: "App: login e fluxos de cadastro" },
     ],
     api: {
       name: "center-pet-api",
@@ -160,8 +162,8 @@ export const projects = [
       { label: "swaply-web", url: "https://github.com/Swaply-Conhecimento/swaply-web" },
     ],
     screenshots: [
-      { src: "/screenshots/s4-dashboard.webp", device: "desktop", caption: "Web: catálogo de cursos e estatísticas" },
-      { src: "/screenshots/s4-login.webp", device: "desktop", caption: "Web: login" },
+      { src: asset("/screenshots/s4-dashboard.webp"), device: "desktop", caption: "Web: catálogo de cursos e estatísticas" },
+      { src: asset("/screenshots/s4-login.webp"), device: "desktop", caption: "Web: login" },
     ],
     api: {
       name: "swaply-api",
@@ -215,9 +217,9 @@ export const projects = [
     stack: ["React Native", "Expo 54", "NativeWind", "React Navigation", "AsyncStorage", "Context API", "REST"],
     repos: [{ label: "center-pet-mobile", url: "https://github.com/Center-Pet/center-pet-mobile" }],
     screenshots: [
-      { src: "/screenshots/s3-pet.webp", device: "phone", caption: "Detalhes do pet" },
-      { src: "/screenshots/s5-register-ong.webp", device: "phone", caption: "Cadastro de ONG" },
-      { src: "/screenshots/s3-ongs.webp", device: "phone", caption: "ONGs em destaque" },
+      { src: asset("/screenshots/s3-pet.webp"), device: "phone", caption: "Detalhes do pet" },
+      { src: asset("/screenshots/s5-register-ong.webp"), device: "phone", caption: "Cadastro de ONG" },
+      { src: asset("/screenshots/s3-ongs.webp"), device: "phone", caption: "ONGs em destaque" },
     ],
     captureNote:
       "Capturas reais do app (Expo/React Native Web) rodando localmente, com pets e ONGs de demonstração servidos por uma API simulada. O logotipo oficial não está versionado no repositório e foi substituído por um texto.",
