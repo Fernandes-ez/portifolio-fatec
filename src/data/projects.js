@@ -30,7 +30,6 @@ export const projects = [
       { src: shot("s1-agua"), device: "desktop", caption: "Conta de água: recomendações por faixa de consumo" },
       { src: shot("s1-luz"), device: "desktop", caption: "Conta de luz: dicas de economia por faixa" },
     ],
-    captureNote: "Capturas reais: o site estático foi servido localmente e fotografado em um navegador.",
     participation: {
       summary:
         "Atuei no front-end do projeto: construí a landing page inicial e as páginas internas, cuidando de estrutura semântica, estilos e imagens, e organizei o código com Git em equipe.",
@@ -68,8 +67,6 @@ export const projects = [
       { src: shot("s2-catalogo"), device: "desktop", caption: "Catálogo: mais populares e novidades" },
       { src: shot("s2-perfil"), device: "desktop", caption: "Perfil do usuário com “Meus Livros”" },
     ],
-    captureNote:
-      "Capturas reais: o servidor Node.js rodou localmente com MySQL/MariaDB e o banco do repositório. Capas e dados do catálogo são de demonstração, pois a API do Google Books não é acessível no ambiente de captura.",
     participation: {
       summary:
         "Fui responsável pelo back-end em Node.js/Express e pela camada de dados em MySQL, além do sistema de e-mails transacionais que sustenta o fluxo de trocas.",
@@ -111,8 +108,6 @@ export const projects = [
       { src: shot("s3-catalogo"), device: "phone", caption: "App: catálogo com busca e filtros" },
       { src: shot("s3-login"), device: "phone", caption: "App: login e fluxos de cadastro" },
     ],
-    captureNote:
-      "Capturas reais do app (Expo/React Native Web) rodando localmente. Pets e ONGs exibidos são dados de demonstração servidos por uma API simulada, pois o banco MongoDB não estava acessível no ambiente de captura.",
     participation: {
       summary:
         "Desenvolvi a API REST do Center Pet do zero, da conexão com o banco ao fluxo de adoção e e-mails, versionando as entregas de forma incremental (0.0.1 → 0.7.4).",
@@ -154,8 +149,6 @@ export const projects = [
       { src: shot("s4-dashboard"), device: "desktop", caption: "Web: catálogo de cursos e estatísticas" },
       { src: shot("s4-login"), device: "desktop", caption: "Web: login" },
     ],
-    captureNote:
-      "Capturas reais da interface web (Vite) rodando localmente. Os cursos e números exibidos são dados de demonstração servidos por uma API simulada, pois o banco MongoDB não estava acessível no ambiente de captura.",
     participation: {
       summary:
         "Atuei nas duas pontas do Swaply: no back-end (autenticação, notificações, agendamento, favoritos, feedback e e-mails) e no front-end React (páginas, tema escuro, acessibilidade e roteamento por URL).",
@@ -196,8 +189,6 @@ export const projects = [
       { src: shot("s5-register-ong"), device: "phone", caption: "Cadastro de ONG" },
       { src: shot("s3-ongs"), device: "phone", caption: "ONGs em destaque" },
     ],
-    captureNote:
-      "Capturas reais do app (Expo/React Native Web) rodando localmente, com pets e ONGs de demonstração servidos por uma API simulada. O logotipo oficial não está versionado no repositório e foi substituído por um texto.",
     participation: {
       summary:
         "Participei da evolução do app com a base do projeto anterior e com a Center Pet API que desenvolvi no 3º semestre, que é o backend consumido pelos serviços mobile.",

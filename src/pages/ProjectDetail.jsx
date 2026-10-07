@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
-import { ArrowLeft, ArrowRight, ExternalLink, Info } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 import Edge from "../components/ui/Edge";
 import Brace from "../components/ui/Brace";
 import { GithubIcon } from "../components/ui/Icons";
@@ -94,10 +94,6 @@ export default function ProjectDetail() {
             <Gallery shots={project.screenshots} title={project.title} />
           </div>
 
-          <p className="mt-12 flex max-w-3xl gap-3 border-l-2 border-amber pl-4 text-[0.88rem] text-[#b9abcb]">
-            <Info size={18} className="mt-0.5 shrink-0 text-amber" />
-            {project.captureNote}
-          </p>
         </div>
       </section>
 
