@@ -53,10 +53,10 @@ export const projects = [
 
   /* ------------------------------------------------------------------ 2º */
   {
-    id: "2buku",
+    id: "buku",
     semester: 2,
     period: "2024.2",
-    title: "2Buku",
+    title: "Buku",
     tagline: "Plataforma de troca de livros usados",
     description:
       "Plataforma para facilitar a troca de livros usados, promovendo a leitura, a sustentabilidade e a conexão entre leitores. Os usuários navegam pelo catálogo, enviam propostas de troca ao dono do livro, que é notificado por e-mail e pode aceitar ou recusar; com a troca confirmada, os contatos são enviados por e-mail para combinarem a logística. Integra a API do Google Books (busca), IBGE (localidades), Nodemailer (notificações) e Cloudinary (imagens).",
